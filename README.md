@@ -4,7 +4,7 @@ API written in Typescript. Right now it only allows user to add new movies to da
 
 
 # Tech Stack
-<img width="50" height="50" src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" /> <img width="50" height="50" src="https://cdn.worldvectorlogo.com/logos/logo-typescript.svg" /> 
+<img width="50" height="50" src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" /> <img width="50" height="50" src="https://cdn.worldvectorlogo.com/logos/typescript.svg" /> 
 
 ## 🚀 Test this project in less than 5 minutes
 
