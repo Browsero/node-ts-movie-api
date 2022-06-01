@@ -49,6 +49,14 @@ export default class MovieTemplate {
   }
 }
 
+/**
+ * It takes a request object and an array of genres and validates the request object against the genres
+ * array
+ * @param {any} requestObject - The object that is being validated.
+ * @param {string[]} genresArray - An array of strings that are the genres that are allowed to be added
+ * to the database.
+ * @returns The return type is MovieValidateTemplate.
+ */
 export const validateMovie = (requestObject: any, genresArray: string[]) => {
   if (!(typeof requestObject !== "object") && !Array.isArray(genresArray))
     throw new WebError("Invalid Genres or request data type.", 400);
@@ -65,6 +73,14 @@ export const validateMovie = (requestObject: any, genresArray: string[]) => {
   return requestObject as MovieValidateTemplate;
 };
 
+/**
+ * It takes a request object, field name, field type, and a boolean value. It validates field based on provided arguments.
+ * @param {any} requestObject - The object that is being validated.
+ * @param {string} fieldName - The name of the field to validate.
+ * @param {string} fieldType - string,
+ * @param [required=true] - boolean - whether or not the field is required
+ * @returns Nothing.
+ */
 const validateField = (
   requestObject: any,
   fieldName: string,
@@ -86,6 +102,13 @@ const validateField = (
   }
 };
 
+/**
+ * It validates that the "genres" field in the request object is an array of strings.
+ * @param {any} requestObject - The object that contains the field to be validated.
+ * @param {string[]} genresArray - string[] - this is the array of genres that the user is trying to
+ * add to the database.
+ * @param [required=true] - boolean - if the field is required or not
+ */
 const validateGenreField = (
   requestObject: any,
   genresArray: string[],
